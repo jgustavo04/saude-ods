@@ -364,12 +364,13 @@
       <button onclick="showSection('higiene')" id="btn-higiene">🧼 Higiene</button>
       <button onclick="showSection('mental')" id="btn-mental">🧠 Saúde Mental</button>
       <button onclick="showSection('atividades')" id="btn-atividades">🏃 Atividades Físicas</button>
+      <button onclick="showSection('educacao')" id="btn-educacao">📚 Educação</button>
       <button onclick="showSection('quiz')" id="btn-quiz">🎯 Quiz</button>
       <button onclick="showSection('agenda')" id="btn-agenda">📅 Agenda</button>
+      <button onclick="showSection('feedback')" id="btn-feedback">💬 Feedback</button>
     </nav>
 
     <div class="container">
-      <!-- Seção Saúde -->
       <section id="saude" class="content-section active">
         <div class="card">
           <h2><span class="icon">🏥</span> Cuidados com a Saúde</h2>
@@ -399,7 +400,6 @@
         </div>
       </section>
 
-      <!-- Seção Alimentação -->
       <section id="alimentacao" class="content-section">
         <div class="card">
           <h2><span class="icon">🥗</span> Alimentação Saudável</h2>
@@ -429,7 +429,6 @@
         </div>
       </section>
 
-      <!-- Seção Higiene -->
       <section id="higiene" class="content-section">
         <div class="card">
           <h2><span class="icon">🧼</span> Higiene Pessoal e Ambiental</h2>
@@ -459,7 +458,6 @@
         </div>
       </section>
 
-      <!-- Seção Saúde Mental -->
       <section id="mental" class="content-section">
         <div class="card">
           <h2><span class="icon">🧠</span> Saúde Mental</h2>
@@ -489,7 +487,6 @@
         </div>
       </section>
 
-      <!-- Seção Atividades Físicas -->
       <section id="atividades" class="content-section">
         <div class="card">
           <h2><span class="icon">🏃</span> Atividades Físicas</h2>
@@ -519,7 +516,35 @@
         </div>
       </section>
 
-      <!-- Seção Quiz -->
+      <section id="educacao" class="content-section">
+        <div class="card">
+          <h2><span class="icon">📚</span> Educação de Qualidade</h2>
+          <div class="importance-section">
+            <h3>Por que a Educação Transforma?</h3>
+            <p>A educação é a base para o desenvolvimento pessoal e social. Ela nos capacita a pensar criticamente, a tomar decisões informadas e a buscar um futuro melhor. Investir em educação é investir em saúde, bem-estar e na construção de uma sociedade mais justa e próspera.</p>
+          </div>
+          
+          <div class="tips-grid">
+            <div class="tip-card">
+              <h4>💡 Conhecimento Contínuo</h4>
+              <p>Nunca pare de aprender. A leitura, a pesquisa e a busca por novas habilidades mantêm sua mente ativa e curiosa.</p>
+            </div>
+            <div class="tip-card">
+              <h4>🤝 Habilidades Sociais</h4>
+              <p>A educação nos ensina a interagir, colaborar e respeitar as diferenças, essenciais para a convivência em sociedade.</p>
+            </div>
+            <div class="tip-card">
+              <h4>🌍 Cidadania Ativa</h4>
+              <p>Uma boa educação nos prepara para ser cidadãos conscientes, participando e contribuindo para a comunidade.</p>
+            </div>
+            <div class="tip-card">
+              <h4>🚀 Oportunidades</h4>
+              <p>A educação abre portas para melhores oportunidades de trabalho e para a realização de sonhos pessoais.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="quiz" class="content-section">
         <div class="card">
           <div class="quiz-section">
@@ -541,7 +566,6 @@
         </div>
       </section>
 
-      <!-- Seção Agenda -->
       <section id="agenda" class="content-section">
         <div class="card">
           <h2><span class="icon">📅</span> Agenda Comunitária</h2>
@@ -570,6 +594,33 @@
             <h4>🏃 Caminhada Comunitária</h4>
             <p>Atividade física em grupo no parque. Todas as idades são bem-vindas! Local: Parque Municipal</p>
           </div>
+        </div>
+      </section>
+      
+      <section id="feedback" class="content-section">
+        <div class="card">
+          <h2><span class="icon">💬</span> Sua Opinião Importa!</h2>
+          <div class="importance-section">
+            <h3>Ajude-nos a Melhorar</h3>
+            <p>Seu feedback é fundamental para continuarmos aprimorando o site e os conteúdos. Conte-nos como o site te ajudou ou o que podemos fazer para melhorá-lo.</p>
+          </div>
+          
+          <form id="feedbackForm">
+            <div style="margin-bottom: 15px;">
+              <label for="nome" style="display: block; font-weight: bold; margin-bottom: 5px;">Nome (Opcional):</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+            </div>
+            <div style="margin-bottom: 15px;">
+              <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px;">Email (Opcional):</label>
+              <input type="email" id="email" name="email" placeholder="seu-email@exemplo.com" style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc;">
+            </div>
+            <div style="margin-bottom: 15px;">
+              <label for="mensagem" style="display: block; font-weight: bold; margin-bottom: 5px;">Sua Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" rows="6" placeholder="Compartilhe como o site te ajudou e/ou o que podemos melhorar." style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; resize: vertical;" required></textarea>
+            </div>
+            <button type="submit" style="background: linear-gradient(45deg, #4CAF50, #45a049); color: white; border: none; padding: 12px 24px; border-radius: 25px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">Enviar Feedback</button>
+          </form>
+          <div id="feedbackMessage" style="margin-top: 20px; font-weight: bold;"></div>
         </div>
       </section>
     </div>
@@ -669,6 +720,23 @@
     // Inicializar com a primeira seção ativa
     document.addEventListener('DOMContentLoaded', function() {
       showSection('saude');
+
+      // Lógica para o formulário de feedback
+      const feedbackForm = document.getElementById('feedbackForm');
+      const feedbackMessage = document.getElementById('feedbackMessage');
+      
+      feedbackForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
+        
+        // Simula o envio do feedback
+        feedbackMessage.innerHTML = '<span style="color: #2E7D32;">✅ Agradecemos seu feedback!</span>';
+        feedbackForm.reset(); // Limpa o formulário
+        
+        // Oculta a mensagem após 5 segundos
+        setTimeout(() => {
+          feedbackMessage.innerHTML = '';
+        }, 5000);
+      });
     });
   </script>
 </body>
